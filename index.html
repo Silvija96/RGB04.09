@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script type="text/javascript" src="main.js" defer></script>
+  <title>Colour gen</title>
+  <link rel="stylesheet" href="./styling.css">
+</head>
+<!-- onload padaro kad iskart butu spalva,net ir perkrovus psl-->
+<body onload="getNewColor()">
+  <div id="heading">
+    <h1>Need a colour?</h1>
+    <h2>Poush le button</h2>
+  </div>
+  <div class="colour">
+    <span id="hex"></span>
+    <!-- on click  atlieka tik viena veiksma-->
+    <button onclick="getNewColor()">Get le colour</button>
+  </div>
+
+  <div class=container>
+    <div class="hex1">
+        <p>Lighter</p>
+        <p id='p1'>?</p>
+      </div>
+      <div class="hex2">
+        <p>Darker</p>
+        <p id='p2'>?</p>
+      </div>
+  </div>
+  
+</body>
+</html>

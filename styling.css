@@ -1,0 +1,106 @@
+/* styling.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#heading {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.colour {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 55px 32px;
+    margin: 100px 300px;
+    border-radius: 10px;
+}
+
+#hex, #rgb {
+    display: block;
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 24px
+}
+
+#rgb {
+    font-size: 32px;
+}
+
+.colour button {
+    background: none;
+    outline: none;
+    color: white;
+    border: 3px solid white;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+}
+.container {
+    display: flex;
+    justify-content: space-between; /* pushes one to the left, one to the right */
+    align-items: center; /* optional: vertical alignment */
+  }
+
+.hex1 {
+
+    width: 50%;
+    padding: 25px;
+    text-align: center;
+}
+.hex2 {
+
+    width: 50%;
+    padding: 25px;
+    text-align: center;
+}
+
+/* responsive.css */
+@media screen and (max-width: 768px) {
+    .colour {
+        margin: 118px 213px;
+    }   
+
+    #hex {
+        font-size: 32px;
+    }
+
+    .colour button {
+        font-size: 20px;
+        padding: 3px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #heading {
+        font-size: small;
+    }
+
+    .colour {
+        margin: 89px 66px;
+    }
+
+
+}
+
+@media screen and (max-width: 325px) {
+    .colour {
+        margin: 101px 66px;
+    }
+
+    #hex {
+        font-size: 25px;
+    }
+
+    .colour button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
